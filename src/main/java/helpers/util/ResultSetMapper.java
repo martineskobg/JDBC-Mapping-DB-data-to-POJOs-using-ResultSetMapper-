@@ -5,6 +5,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,7 +58,7 @@ public class ResultSetMapper<T> {
                     }
 
                 } else {
-                    // throw some error
+                    System.err.println("Missing annotation/s! ");
                 }
             } else {
                 return null;
